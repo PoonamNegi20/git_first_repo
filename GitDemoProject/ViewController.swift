@@ -51,6 +51,21 @@ class ViewController: UIViewController {
         
     }
 
+    
+    
+    func networkingCall(){
+        let dataTask = URLSession.shared.dataTask(with: URL(string: "https://jsonplaceholder.com/posts")!) { (data, response, error) in
+            if let error = error{
+                print(error)
+                return
+            }
+            
+            guard let data = data else {print("not data"); return}
+                print(data)
+            
+        }
+        
+    }
 
 }
 
