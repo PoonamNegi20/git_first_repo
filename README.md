@@ -1,2 +1,4 @@
-# my_first_repo
+# Git_first_repo
 this is for testing
+
+new name now
